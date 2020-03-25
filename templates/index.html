@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <title>user</title>
+{% endblock %}
+
+{% block body%}
+<h1>טבלת מעקב לחשבון חשמל ומים</h1>
+<h3><a href="/update">הזן נתונים</a></h3>
+<h3><a href="/infoA">הצג נתונים לדירה א</a></h3>
+<h3><a href="/infoB">הצג נתונים לדירה ב</a></h3>
+
+{% endblock %}

@@ -11,10 +11,12 @@ db = mysql.connector.connect(
 cursor = db.cursor()
 
 
-def addVal(table, wPrice, ePrice):
-    waterNew = int(input('water: '))
-    electricityNew = int(input('electricity: '))
-
+def addVal(table, wPrice, ePrice, waterNew, electricityNew):
+    try:
+        waterNew = int(waterNew)
+        electricityNew = int(electricityNew)
+    except:
+        return 1
     cursor.execute('select max(date) from ' + table)
     lastDate = cursor.fetchone()
     # print(lastDate)
@@ -56,3 +58,23 @@ def addVal(table, wPrice, ePrice):
     cursor.execute(sql)
     # print(sql)
     db.commit()
+    return 0
+
+
+def getData(apartment):
+    cursor.execute('SELECT date FROM apartments.' + apartment)
+    date = cursor.fetchall()
+    cursor.execute('SELECT water FROM apartments.' + apartment)
+    water = cursor.fetchall()
+    cursor.execute('SELECT electricity FROM apartments.' + apartment)
+    electricity = cursor.fetchall()
+    cursor.execute('SELECT total_water FROM apartments.' + apartment)
+    total_w = cursor.fetchall()
+    cursor.execute('SELECT total_electricity FROM apartments.' + apartment)
+    total_e = cursor.fetchall()
+    cursor.execute('SELECT total_payment FROM apartments.' + apartment)
+    total_p = cursor.fetchall()
+
+    data = [date, water, electricity, total_w, total_e, total_p]
+    print(data)
+    return data

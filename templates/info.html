@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>info table</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<table border="1">
+
+    <tr>
+        <th>סך הכל לתשלום</th>
+        <th>סיכום חשמל</th>
+        <th>סיכום מים</th>
+        <th>חשמל</th>
+        <th>מים</th>
+        <th>תאריך</th>
+    </tr>
+
+        {% for x in range(rows) %}
+        <tr>
+            <td>{{pay[x]}}</td>
+            <td>{{total_e[x]}}</td>
+            <td>{{total_w[x]}}</td>
+            <td>{{elect[x]}}</td>
+            <td>{{water[x]}}</td>
+            <td>{{dates[x]}}</td>
+        </tr>
+        {% endfor %}
+
+</table>
+
+{% endblock %}

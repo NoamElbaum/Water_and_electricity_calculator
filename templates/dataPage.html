@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>data addition</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dataPage.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="login-box">
+    <h1>הוספת מידע</h1>
+
+    <form action="" method=post>
+        <div class="textbox">
+            <p>
+                {{form.water.label()}}<br>
+                {{form.water(size=30)}}
+            </p>
+        </div>
+
+        <div class="textbox">
+            {{form.electricity.label()}}<br>
+            {{form.electricity(size=30)}}
+        </div>
+        <p>{{form.apartmentA(class ="btn")}}</p>
+        <p>{{form.apartmentB(class ="btn")}}</p>
+    </form>
+</div>
+{% endblock %}
