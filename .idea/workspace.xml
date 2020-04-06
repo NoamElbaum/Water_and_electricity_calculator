@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1719514f-8747-409c-b23e-dce713013834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/dataPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dataPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apartments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlEditor.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlEditor.py" afterDir="false" />
-    </list>
+    <list default="true" id="1719514f-8747-409c-b23e-dce713013834" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +103,13 @@
       <option name="presentableId" value="Default" />
       <updated>1579220076419</updated>
     </task>
+    <task id="LOCAL‎00001" summary="added view page">
+      <created>1585169357971</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1585169357971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +124,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added view page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added view page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
